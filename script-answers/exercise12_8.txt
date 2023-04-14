@@ -1,0 +1,133 @@
+Script started on Fri Apr 14 17:38:46 2023
+N/A: version "N/A -> N/A" is not yet installed.
+
+You need to run "nvm install N/A" to install it before using it.
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hddocker exec 0 -t it mongo-1 bas [Kh[?2004l
+Error: No such container: mongo-1
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hdocker exec -it mongo-1 bash[K[A[77C[1Ct mongo-1 bash[A[65Co mongo-1 bash[A[65Cd mongo-1 bash[A[65Co mongo-1 bash[A[65C mongo-1 bash [A[64C[P[9Cbash [A[64C[P[10Cash [A[64C[P[11Csh [A[64C[1C mongo-1 bash[A[65Ct mongo-1 bash[A[65Co mongo-1 bash[A[65Cd mongo-1 bash[A[65Co mongo-1 bash[A[65C- mongo-1 bash[A[65Cb mongo-1 bash[A[65Ca mongo-1 bash[A[65Cc mongo-1 bash[A[65Ck mongo-1 bash[A[65Ce mongo-1 bash[A[65Cn mongo-1 bashd mongo-1 bash[13Dd/ mongo-1 bash[13Dd[P[13C [14Dd/ mongo-1 bash[13D[1C[1C[1C[P[12C [13D[1C[1C[?2004l
+Error: No such container: todo-backend/mongo-1
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hdocker exec -it todo-backend/mongo-1 bash[Kd[P[12C [13Dd"mongo-1 bash[12Dd[P[12C [13Dd:mongo-1 bash[12D[?2004l
+Error: No such container: todo-backend:mongo-1
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hddocker container ls[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                     NAMES
+d57b693cacd7   nginx     "/docker-entrypoint.…"   5 minutes ago    Up 5 minutes    0.0.0.0:8080->80/tcp      hardcore_stonebraker
+18afe01cc5f2   mongo     "docker-entrypoint.s…"   51 minutes ago   Up 50 minutes   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hdocker container ls[12Dexec -it todo-backend:mongo-1 bash[K[1C bash  bash  bash  bash  bash  bash  bash d bash  bash [A[77C bash [A[72C bash [A[72C bash [A[72C bash [A[72C bash [K[A[72C bash[K[1B[K[A[72C bash [13Dcontainer ls      [19D                   [19Dcclear[?2004l[1B[H[2J[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hcleardocker container ls[12Dexec -it todo-backend:mongo-1 bash[K bash  bash  bash  bash  bash  bash  bash d bash  bash [A[77C bash [A[72C bash [A[72C bash [A[72C bash [A[72C bash [K[A[72C bash[K[1B[K[A[72C[14Dcontainer ls       [19Dclear              [14D[?2004l[1B[H[2J[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hcleardocker container ls[12Dexec -it todo-backend:mongo-1 bash[K bash  bash  bash  bash  bash  bash  bash d bash  bash [A[77C bash [A[72C bash [A[72C bash [A[72C bash [A[72C bash [K[A[72C bash[K[1B[K[A[72C bash  bash  bash  bash  bash bash  bash  bash  bash bash  bash  bash  bash  bash bash  bash  bash  bash  bash d bash  bash docker container ls[19Dclear              [14D[?2004l[1B[H[2J[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004hddocker exec -it todo-backen [Kdd-mongo-- 1 bash[?2004l
+[?2004hroot@18afe01cc5f2:/# ls
+[?2004lbin   dev			  home	      media  proc  sbin  tmp
+boot  docker-entrypoint-initdb.d  js-yaml.js  mnt    root  srv	 usr
+data  etc			  lib	      opt    run   sys	 var
+[?2004hroot@18afe01cc5f2:/# monogsh
+[?2004lbash: monogsh: command not found
+[?2004hroot@18afe01cc5f2:/# mono gosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	64396608fa627c1cfe5eb8ae
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0[0m
+Using MongoDB:		6.0.5
+[1m[33mUsing Mongosh[0m:		1.8.0
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the [1mdisableTelemetry()[0m command.
+
+[1G[0J [1G[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m: command listDatabases requires authentication
+[1G[0Jtest> [7G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jtest> [7G
+[?2004hroot@18afe01cc5f2:/# mongosh h -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	643966382497b8e590c4e6a2
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0[0m
+Using MongoDB:		6.0.5
+[1m[33mUsing Mongosh[0m:		1.8.0
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-04-14T13:48:50.503+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-04-14T13:48:51.423+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1m[33m------[0m
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         72.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow
+Uncaught [1m[31mMongoshInvalidInputError[0m: [COMMON-10001] 'undefined' is not a valid argument for "show".
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.tdo[1G[0Jthe_database> db.td[20G[1G[0Jthe_database> db.t[19Godos.find()[1G[0Jthe_database> db.todos.find([29G{})_[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId("643959c129626328b34454ec"),
+    text: [32m'Write code v3'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("643959c129626328b34454ed"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.collection[1G[0Jthe_database> db.collectio[27G[1G[0Jthe_database> db.collecti[26G[1G[0Jthe_database> db.collect[25G[1G[0Jthe_database> db.collec[24G[1G[0Jthe_database> db.colle[23G[1G[0Jthe_database> db.coll[22G[1G[0Jthe_database> db.col[21G[1G[0Jthe_database> db.co[20G[1G[0Jthe_database> db.c[19G[1G[0Jthe_database> db.[18Gtodos.insertOne)[1G[0Jthe_database> db.todos.insertOne[33G)[1G[0Jthe_database> db.todos.insertOne[33G({
+[1G[0J... [5Gtext: [32m"[39m[1G[0J... text: [11G[32m'[39m[32mW[39m[32mr[39m[32mi[39m[32mt[39m[32me[39m [32mc[39m[32mo[39m[32md[39m[32me[39m [32mv[39m[32m4[39m[32m"[39m[32m,[39m
+Uncaught:
+[1m[31mSyntaxError[0m: Unterminated string constant. (2:6)
+
+[0m [90m 1 |[39m db[33m.[39mtodos[33m.[39minsertOne({[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m text[33m:[39m [32m'Write code v4",[39m[0m
+[0m [90m   |[39m       [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4",[39m[58G [32m=[39m[32m=[39m[32m=[39m[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4", ==[39m[61G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4", =[39m[60G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4", [39m[59G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4",[39m[58G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4"[39m[57G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4[39m[56G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v[39m[55G[32m4[39m[32m'[39m, t[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [59Gd[36mdo[39mdone[33mdone[39m: [32m'[39m[32mt[39m[32mr[39m[32mu[39m[32me[39m [1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [32m'true[39m[70G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [32m'tru[39m[69G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [32m'tr[39m[68G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [32m't[39m[67G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [32m'[39m[66G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [65G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m:[64Gtr[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m:t[65G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m:[64G tru[33mtrue[39m })
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("643966a571000b3a5b7ef46e")
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4'[39m, [33mdone[39m: [33mtrue[39m })[72G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m'Write code v4",[39m[58G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId("643959c129626328b34454ec"),
+    text: [32m'Write code v3'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("643959c129626328b34454ed"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("643966a571000b3a5b7ef46e"),
+    text: [32m'Write code v4'[39m,
+    done: [33mtrue[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@18afe01cc5f2:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                              ]7;file://Thomass-MacBook-Air.local/Users/thomasborbeli/Documents/Programming/part12-containers-applications/script-answers[0m[27m[24m[Jthomasborbeli@Thomass-MacBook-Air script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...       4 completed.
+
+Script done on Fri Apr 14 17:44:19 2023
